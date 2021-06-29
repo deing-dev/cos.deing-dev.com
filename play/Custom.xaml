@@ -1,0 +1,47 @@
+
+<!-- 这是 PCL2 的主页自定义文件。你可以通过修改这个文件来自定义 PCL2 主页：添加文本、打开网页、启动游戏，等等。
+     如果你倒腾这个文件把 PCL2 玩炸了，把这个文件直接删除就行了。
+     如果你懂得 WPF 的布局文件编写，你甚至可以做出不少的新玩意儿…… -->
+
+<local:MyCard Title="欢迎来到：天空岛" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                   Text="这里是天空岛联机厅的启动器，如果你会使用我的世界 PCL2 启动器，则可以不看这一串的公告栏，如果你不会，请仔细查看。" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#8C7721"
+                   Text="请注意：请使用此启动器进入天空岛，否则会加载失败。" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" FontSize="11"
+                   Text="这里什么都没有！" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="房间内使用模组" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Text="你必须拥有这些模组才能进入天空岛！" />
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                   Text="游戏版本1.12.2（最新Forge版本和Optifine版本" />
+        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
+                   Text="加载模组有：星系模组及其核心模组，更多星球模组，工业2模组，工业复兴模组，通用机械，通用电力，通用模组核心，拔刀剑，SCP基金会，更多门模组，安全模块，更多生物群系，匠魂及其核心模组，高清修复模组，旅行者地图模组" />
+   </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="我的世界中文论坛" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Width="320" HorizontalAlignment="Right"
+                   Text="无内容" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,6"
+                   Text="无内容" />
+        <Image Height="50" HorizontalAlignment="Center" Source="https://www.mcbbs.net/template/mcbbs/image/logo_sc.png" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="打开官网" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                   Text="我们的官方网站" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                   Text="点击此处访问我们的官方网站，查看一切信息" />
+        <local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 天空岛官网" EventType="打开网页" EventData="https://play.xgbutterfly.cn" />
+    </StackPanel>
+</local:MyCard>
+
